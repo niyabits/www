@@ -34,3 +34,7 @@ h3 {
   font-size: clamp(1rem, 5.3vw - 1.8rem, 1.5rem);
   padding: 0;
 }
+
+a {
+  text-decoration: none;
+}
