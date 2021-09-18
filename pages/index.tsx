@@ -1,11 +1,9 @@
 import Link from "next/link";
-import Layout from "../components/Layout";
-
-import { styled } from "../stitches.config";
-
 import Laptop from "../assets/laptop";
-import Technology from "../components/Technology";
 import Connect from "../components/Connect";
+import Layout from "../components/Layout";
+import Technology from "../components/Technology";
+import { styled } from "../stitches.config";
 
 const Home = styled("div", {
   display: "flex",
