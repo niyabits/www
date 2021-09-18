@@ -5,7 +5,7 @@ const NavCont = styled("nav", {
   display: "flex",
   width: "100%",
   justifyContent: "flex-end",
-  marginTop: "18px",
+  paddingTop: "18px",
 
   a: {
     color: "white",
