@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Laptop from "../assets/laptop";
+import WavyLine from "../assets/WavyLine";
 import Connect from "../components/Connect";
 import Layout from "../components/Layout";
 import Technology from "../components/Technology";
@@ -35,6 +36,12 @@ const Home = styled("div", {
   },
 });
 
+const Wavy = styled(WavyLine, {
+  width: "105%",
+  position: "relative",
+  right: "28px",
+});
+
 const IndexPage = () => (
   <Layout title="Yash Gupta - Personal Website">
     <Home>
@@ -48,6 +55,7 @@ const IndexPage = () => (
       <Laptop width="25vw" />
     </Home>
     <Technology />
+    <Wavy />
     <Connect />
   </Layout>
 );

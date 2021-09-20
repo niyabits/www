@@ -11,6 +11,7 @@ type Props = {
 const LayoutCont = styled("div", {
   background: "url('/bg.jpg') no-repeat ",
   backgroundSize: "cover",
+  overflowX: "hidden",
 });
 
 const Layout = ({ children, title = "This is the default title" }: Props) => (
