@@ -3,6 +3,7 @@ import Laptop from "../assets/laptop";
 import WavyLine from "../assets/WavyLine";
 import Connect from "../components/Connect";
 import Layout from "../components/Layout";
+import Projects from "../components/Projects";
 import Technology from "../components/Technology";
 import { styled } from "../stitches.config";
 
@@ -55,6 +56,7 @@ const IndexPage = () => (
       <Laptop width="25vw" />
     </Home>
     <Technology />
+    <Projects />
     <Wavy />
     <Connect />
   </Layout>
