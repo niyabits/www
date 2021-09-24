@@ -21,6 +21,7 @@ const Nav = () => {
         <Link href="/">
           <a>Home</a>
         </Link>{" "}
+        <a href="#projects">Projects</a>
         <a href="#connect">Connect</a>
       </div>
     </NavCont>
