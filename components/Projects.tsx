@@ -15,7 +15,7 @@ const TopProjCont = styled("div", {
     margin: "0 30px",
   },
 
-  "& > div > div": {
+  a: {
     display: "flex",
     justifyContent: "space-between",
   },
@@ -27,8 +27,13 @@ const TopProj = () => {
       <ReactDirImg width="200px" />
       <div>
         <div>
-          <h3>React Directory</h3>
-          <GithubIcon />
+          <a
+            href="https://github.com/yashguptaz/react-directory"
+            target="_blank"
+          >
+            <h3>React Directory</h3>
+            <GithubIcon />
+          </a>
         </div>
         <p>
           A React library with a human API to create a directory structure in
@@ -41,20 +46,18 @@ const TopProj = () => {
 
 const OtherProjCont = styled("div", {
   width: "252px",
-  padding: "24px",
+  padding: "36px",
   margin: "12px 12px",
   border: "1px solid #394655",
   borderRadius: "12px",
+  maxWidth: "750px",
+
+  "@media (max-width: 1750px)": {
+    width: "70%",
+    margin: "12px 30px",
+  },
 
   a: {
-    color: "white",
-  },
-
-  "@media (max-width: 1652px)": {
-    width: "auto",
-  },
-
-  div: {
     display: "flex",
     justifyContent: "space-between",
   },
@@ -76,8 +79,8 @@ const OtherProj = ({
   return (
     <OtherProjCont>
       <div>
-        <h3>{title}</h3>
         <a href={to} target="_blank">
+          <h3>{title}</h3>
           {linkType === "github" ? <GithubIcon /> : <ExtLink />}
         </a>
       </div>
@@ -93,9 +96,17 @@ const ProjCont = styled("div", {
   marginBottom: "15vh",
   marginTop: "15vh",
 
+  a: {
+    color: "white",
+  },
+
   "& > div": {
     display: "flex",
     justifyContent: "center",
+  },
+
+  h3: {
+    color: "#7DFFB1",
   },
 
   ".oth-proj-cont": {
@@ -107,8 +118,9 @@ const ProjCont = styled("div", {
     width: "60%",
     marginTop: "60px",
 
-    "@media (max-width: 1652px)": {
+    "@media (max-width: 1750px)": {
       flexDirection: "column",
+      width: "auto",
     },
   },
 });
