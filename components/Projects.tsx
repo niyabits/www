@@ -1,9 +1,15 @@
+import ExtLink from "../assets/icons/ExtLink";
 import GithubIcon from "../assets/icons/Github";
 import ReactDirImg from "../assets/ReactDir";
 import { styled } from "../stitches.config";
 
 const TopProjCont = styled("div", {
   display: "flex",
+  border: "1px solid #394655",
+  borderRadius: "12px",
+  width: "70%",
+  margin: "0 30px",
+  padding: 36,
 
   "& > div": {
     margin: "0 30px",
@@ -13,12 +19,6 @@ const TopProjCont = styled("div", {
     display: "flex",
     justifyContent: "space-between",
   },
-});
-
-const ProjCont = styled("div", {
-  display: "flex",
-  alignItems: "center",
-  flexDirection: "column",
 });
 
 const TopProj = () => {
@@ -39,14 +39,107 @@ const TopProj = () => {
   );
 };
 
+const OtherProjCont = styled("div", {
+  width: "252px",
+  padding: "24px",
+  margin: "12px 12px",
+  border: "1px solid #394655",
+  borderRadius: "12px",
+
+  a: {
+    color: "white",
+  },
+
+  "@media (max-width: 1652px)": {
+    width: "auto",
+  },
+
+  div: {
+    display: "flex",
+    justifyContent: "space-between",
+  },
+});
+
+type OtherProjProps = {
+  title: string;
+  desc: string;
+  to: string;
+  linkType?: "github" | "live";
+};
+
+const OtherProj = ({
+  title,
+  desc,
+  linkType = "github",
+  to,
+}: OtherProjProps) => {
+  return (
+    <OtherProjCont>
+      <div>
+        <h3>{title}</h3>
+        <a href={to} target="_blank">
+          {linkType === "github" ? <GithubIcon /> : <ExtLink />}
+        </a>
+      </div>
+      <p>{desc}</p>
+    </OtherProjCont>
+  );
+};
+
+const ProjCont = styled("div", {
+  display: "flex",
+  alignItems: "center",
+  flexDirection: "column",
+  marginBottom: "15vh",
+  marginTop: "15vh",
+
+  "& > div": {
+    display: "flex",
+    justifyContent: "center",
+  },
+
+  ".oth-proj-cont": {
+    display: "flex",
+    justifyContent: "space-between",
+    alignContent: "center",
+    flexWrap: "wrap",
+
+    width: "60%",
+    marginTop: "60px",
+
+    "@media (max-width: 1652px)": {
+      flexDirection: "column",
+    },
+  },
+});
+
 const Projects = () => {
   return (
-    <ProjCont>
+    <ProjCont id="projects">
       <h2>Projects</h2>
+      <br />
+      <br />
       <div>
-        <br />
-        <br />
         <TopProj />
+      </div>
+      <div className="oth-proj-cont">
+        <OtherProj
+          title="Calvera Dark"
+          desc="A Neovim Theme made in the Lua Programming Language, it pritorizes loading important colors first through Neovim APIs it has support for various plugins"
+          to="https://github.com/yashguptaz/calvera-dark.nvim"
+        />
+        <OtherProj
+          title="Tell About"
+          desc="A CLI Tool to get information about 
+NPM packages."
+          to="https://github.com/yashguptaz/tell-about"
+        />
+        <OtherProj
+          title="Dowik"
+          desc="A tasks app made with Next.js, TypeScript Stitches, Radix-UI, firebase, and other technologies. "
+          linkType="live"
+          to="https://ontwik-todo-yash.vercel.app/"
+        />
       </div>
     </ProjCont>
   );

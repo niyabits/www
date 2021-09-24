@@ -1,6 +1,6 @@
 import { copyToClipboard } from "copy-lite";
 import React from "react";
-import ClipboardSvg from "../assets/CheckMark";
+import ClipboardSvg from "../assets/icons/CheckMark";
 import CopyIcon from "../assets/icons/copy";
 import { styled } from "../stitches.config";
 
