@@ -11,6 +11,22 @@ const TopProjCont = styled("div", {
   margin: "0 30px",
   padding: 36,
 
+  "@media (max-width: 1750px)": {
+    padding: "36px",
+    border: "1px solid #394655",
+    borderRadius: "12px",
+    maxWidth: "750px",
+
+    width: "70%",
+    margin: "auto",
+  },
+
+  "@media (max-width: 500px)": {
+    "#topProjImg": {
+      display: "none",
+    },
+  },
+
   "& > div": {
     margin: "0 30px",
   },
@@ -24,7 +40,7 @@ const TopProjCont = styled("div", {
 const TopProj = () => {
   return (
     <TopProjCont>
-      <ReactDirImg width="200px" />
+      <ReactDirImg width="200px" id="topProjImg" />
       <div>
         <div>
           <a
