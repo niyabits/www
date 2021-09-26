@@ -5,12 +5,17 @@ const NavCont = styled("nav", {
   display: "flex",
   width: "100%",
   justifyContent: "flex-end",
+  marginRight: "18px",
   paddingTop: "18px",
 
   a: {
     color: "white",
     textDecoration: "none",
     margin: "0px 18px",
+  },
+
+  div: {
+    marginRight: "12px",
   },
 });
 

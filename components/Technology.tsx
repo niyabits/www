@@ -9,7 +9,7 @@ const TechCont = styled("div", {
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
-  height: "65vh",
+  marginTop: "5vh",
 
   p: {
     marginBottom: 60,

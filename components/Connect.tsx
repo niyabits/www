@@ -10,6 +10,7 @@ const Cont = styled("div", {
   alignItems: "center",
   height: "60vh",
   marginTop: "20vh",
+  marginBottom: "120px",
 
   ".copyEmail": {
     display: "flex",
