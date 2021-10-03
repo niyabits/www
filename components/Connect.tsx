@@ -8,9 +8,8 @@ const Cont = styled("div", {
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  height: "60vh",
   marginTop: "20vh",
-  marginBottom: "120px",
+  marginBottom: "320px",
 
   ".copyEmail": {
     display: "flex",

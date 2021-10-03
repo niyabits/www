@@ -132,7 +132,7 @@ const ProjCont = styled("div", {
     flexWrap: "wrap",
 
     width: "60%",
-    marginTop: "60px",
+    marginTop: "12px",
 
     "@media (max-width: 1750px)": {
       flexDirection: "column",
