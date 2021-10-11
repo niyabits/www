@@ -1,5 +1,4 @@
 import * as React from "react";
-import { motion } from "framer-motion";
 
 function Laptop(props: React.SVGProps<SVGSVGElement>) {
   return (
@@ -1189,7 +1188,7 @@ function Laptop(props: React.SVGProps<SVGSVGElement>) {
               opacity={0.5}
             />
             <g id="ScreenStuff" opacity={0.74}>
-              <motion.path
+              <path
                 id="VimWindow"
                 d="M192.05 247.63L74.81 315V146.26a4.73 4.73 0 012.23-3.7L189.2 78.14c1.57-.9 2.85-.25 2.85 1.46z"
                 fill="#011627"

@@ -8,11 +8,12 @@ export const { styled, getCssText, globalCss } = createStitches({
 
     fonts: {
       headings: "'Poppins', sans-serif",
-      text: "'PT Sans', sans-serif",
+      text: "'Inter', sans-serif",
     },
 
     colors: {
       gray900: "hsl(213, 21%, 10%)",
+      gray200: "hsl(212, 33%, 89%)",
       gray100: "hsl(210, 36%, 98%)",
     },
 

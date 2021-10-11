@@ -4,9 +4,15 @@ import globalStyles from "../../styles/global.styles";
 import { styled } from "@/stitches";
 
 const Container = styled("div", {
-  maxWidth: "$lg",
-  margin: "auto",
   padding: "0 $sp5",
+  main: {
+    maxWidth: "$lg",
+    margin: "auto",
+  },
+
+  background: "url('/bg.jpg') no-repeat",
+  backgroundSize: "cover",
+  overflowX: "hidden",
 });
 
 const Layout: React.FC<{}> = ({ children }) => {

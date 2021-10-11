@@ -4,6 +4,7 @@ const globalStyles = globalCss({
   // CSS Reset and BoxSizing
   "@import": [
     "url('https://fonts.googleapis.com/css2?family=PT+Sans&family=Poppins:wght@300;400;500&display=swap')",
+    "url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap')",
   ],
 
   html: {
