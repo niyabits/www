@@ -3,6 +3,8 @@ import { styled } from "@/stitches";
 const Container = styled("nav", {
   padding: "$sp5 0",
   height: "$sz8",
+  position: "fixed",
+  width: "100%",
 
   ul: {
     display: "flex",

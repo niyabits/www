@@ -39,6 +39,10 @@ const globalStyles = globalCss({
   h2: { fontSize: "$fs9" },
   h3: { fontSize: "$fs8" },
   h4: { fontSize: "$fs7" },
+
+  section: {
+    marginBottom: "$sp10",
+  },
 });
 
 export default globalStyles;

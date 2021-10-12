@@ -1,11 +1,14 @@
 import Button from "@/components/Button";
 import Layout from "@/components/Layout";
+import Projects from "@/components/Projects";
+import Technology from "@/components/Technologies";
 import { styled } from "@/stitches";
 import Laptop from "../../assets/laptop";
 
 const Home = styled("section", {
   // 82% viewport height - Navbar Height
-  height: "calc(82vh - $sz8)",
+  height: "calc(87vh - $sz8)",
+  marginBottom: "$sp9",
 
   display: "flex",
   justifyContent: "space-around",
@@ -36,6 +39,8 @@ const Index = () => {
         </div>
         <Laptop width="30rem" />
       </Home>
+      <Technology />
+      <Projects />
     </Layout>
   );
 };
