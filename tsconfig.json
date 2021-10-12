@@ -25,6 +25,9 @@
       "@/components/*": [
         "src/components/*"
       ],
+      "@/assets/*": [
+        "assets/*"
+      ],
       "@/stitches": [
         "stitches.config.ts"
       ]
