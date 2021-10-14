@@ -1,6 +1,12 @@
 import GithubIcon from "@/assets/icons/Github";
 import { styled } from "@/stitches";
 
+const ProjectContainer = styled("div", {
+  border: "solid 1px white",
+  padding: "$sp3",
+  borderRadius: "$r2",
+});
+
 type ProjectType = {
   ProjectName: string;
   ProjectDesc: string;
@@ -15,14 +21,20 @@ const Project = ({
   ProjectDesc,
 }: ProjectType) => {
   return (
-    <div>
-      <div className="proj-name">{ProjectName}</div>
-      <span>{ProjectDesc}</span>
-      <a href={ProjectGithub}>
-        <GithubIcon />
-      </a>
-      <a href={ProjectLink}>{/* Globe icon goes here */}</a>
-    </div>
+    <ProjectContainer>
+      <span className="proj-name">{ProjectName}</span>
+      <span className="proj-desc">{ProjectDesc}</span>
+      <span className="proj-icons">
+        {ProjectGithub ? (
+          <a href={ProjectGithub}>
+            <GithubIcon />
+          </a>
+        ) : null}
+        {ProjectLink ? (
+          <a href={ProjectLink}>{/* Globe icon goes here */}</a>
+        ) : null}
+      </span>
+    </ProjectContainer>
   );
 };
 

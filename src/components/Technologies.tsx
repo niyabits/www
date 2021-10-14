@@ -10,7 +10,6 @@ const Container = styled("section", {
   alignItems: "center",
 
   "#logos": {
-    marginTop: "$sp8",
     marginBottom: "$sp3",
     display: "flex",
     alignItems: "baseline",

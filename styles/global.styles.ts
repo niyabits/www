@@ -42,6 +42,10 @@ const globalStyles = globalCss({
 
   section: {
     marginBottom: "$sp10",
+
+    h1: {
+      marginBottom: "$sp6",
+    },
   },
 });
 

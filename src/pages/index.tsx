@@ -19,6 +19,7 @@ const Home = styled("section", {
     fontWeight: "400",
     position: "relative",
     right: "$sp2",
+    marginBottom: "$sp1",
   },
 
   h2: { fontWeight: "100" },
