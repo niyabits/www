@@ -2,9 +2,13 @@ import GithubIcon from "@/assets/icons/Github";
 import { styled } from "@/stitches";
 
 const ProjectContainer = styled("div", {
-  border: "solid 1px white",
-  padding: "$sp3",
+  border: "solid 1px $gray800",
+  padding: "$sp3 $sp4",
   borderRadius: "$r2",
+
+  ".proj-name, .proj-desc": {
+    marginRight: "$sp6",
+  },
 });
 
 type ProjectType = {
@@ -44,11 +48,11 @@ const Container = styled("section", {
   alignItems: "center",
 });
 
-const ProjectList = [
+const ProjectList: ProjectType[] = [
   {
-    name: "Dowik",
-    desc: "Next.js App which uses SSR and SSG",
-    link: "https://ontwik-todo-yash.vercel.app/",
+    ProjectName: "Dowik",
+    ProjectDesc: "Basic Next.js App made with Firebase and TypeScript",
+    ProjectLink: "https://ontwik-todo-yash.vercel.app/",
   },
 ];
 
@@ -58,9 +62,10 @@ const Projects = () => {
       <h1>Featured Projects</h1>
       {ProjectList.map((project) => (
         <Project
-          ProjectName={project.name}
-          ProjectDesc={project.desc}
-          ProjectLink={project.link}
+          ProjectName={project.ProjectName}
+          ProjectDesc={project.ProjectDesc}
+          ProjectLink={project.ProjectLink}
+          ProjectGithub={project.ProjectGithub}
         />
       ))}
     </Container>

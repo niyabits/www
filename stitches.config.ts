@@ -13,6 +13,8 @@ export const { styled, getCssText, globalCss } = createStitches({
 
     colors: {
       gray900: "hsl(213, 21%, 10%)",
+      gray800: "hsl(211, 39%, 23%)",
+      gray700: "hsl(209, 34%, 30%)",
       gray200: "hsl(212, 33%, 89%)",
       gray100: "hsl(210, 36%, 98%)",
     },
