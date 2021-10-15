@@ -1,7 +1,7 @@
-import React from "react";
 import Nav from "@/components/Nav";
-import globalStyles from "../../styles/global.styles";
 import { styled } from "@/stitches";
+import React from "react";
+import globalStyles from "../../styles/global.styles";
 
 const Container = styled("div", {
   padding: "0 $sp5",
