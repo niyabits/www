@@ -26,6 +26,7 @@ const Container = styled("section", {
 
   "#tech-text": {
     marginTop: "$sp5",
+
     span: {
       marginRight: "$sp4",
       "&:not(:last-of-type)": {
@@ -49,27 +50,27 @@ const Tech = () => {
         <NodeLogo />
       </div>
 
-      <div id="tech-text">
+      <p id="tech-text">
         <span>TypeScript</span>
         <span>React</span>
         <span>GraphQL</span>
         <span>Node.js</span>
         <span>Next.js</span>
         <span>CSS</span>
-      </div>
+      </p>
 
-      <div id="tech-text">
+      <p id="tech-text">
         <span>Arch Linux</span>
         <span>Neovim</span>
         <span>Git</span>
         <span>Visual Studio Code</span>
-      </div>
+      </p>
 
-      <div id="tech-text">
+      <p id="tech-text">
         <span>Figma</span>
         <span>Adobe XD</span>
         <span>Adobe Photoshop</span>
-      </div>
+      </p>
     </Container>
   );
 };
